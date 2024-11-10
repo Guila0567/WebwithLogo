@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilatto's Printingpress</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(251, 237, 194); 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #824a71;
+            height: 80px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 0 10px; 
+            z-index: 1000;
+            margin-bottom: 25px;
+        }
+
+        #logo-div img {
+            max-width: 90%;
+            max-height: 80px; 
+            height: auto;
+        }
+
+        #nav-div {
+            font-size: 25px;
+            width: 70%;
+            display: inline-block;
+            text-align: right;
+        }
+
+        #nav-div a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #nav-div a:active {
+            color: #499cc7;
+        }
+
+        #wrapper-div {
+            display: flex;
+            padding: 15px; 
+        }
+
+        #sidebar {
+            width: 20%;
+            background-color: #e6e6e6;
+            padding: 15px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover {
+            color: #824a71;
+            font-weight: bold;
+        }
+
+        #main-content {
+            width: 80%;
+            padding: 0 15px;
+        }
+
+        #header-banner-div {
+            font-size: 25px;
+            min-height: 100px;
+            background-color: white;
+            text-align: center;
+            line-height: 150px;
+            margin-bottom: 25px;
+        }
+
+        #intro-text-div {
+            font-size: 25px;
+            min-height: 60px;
+            background-color: white;
+            text-align: center;
+            line-height: 120px;
+            margin-bottom: 25px;
+        }
+
+        #main-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .box {
+            font-size: 25px;
+            width: 48%;
+            min-height: 300px;
+            background-color: white;
+            text-align: center;
+            line-height: 300px;
+            margin-bottom: 25px;
+        }
+
+        #footer-div {
+            font-size: 25px;
+            width: 100%;
+            min-height: 50px;
+            background-color: white;
+            text-align: center;
+            line-height: 55px;
+        }
+
+        @media (max-width: 768px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo-div, #nav-div {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #wrapper-div {
+                flex-direction: column;
+            }
+
+            #sidebar, #main-content {
+                width: 100%;
+            }
+
+            .box {
+                width: 100%;
+                font-size: 30px;
+                line-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo-div">
+            <img src="images/Guilatto's PrintingtypoA.png" alt="Logo">
+        </div>
+        
+        <div id="nav-div">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div id="wrapper-div">
+        <div id="sidebar">
+            <h3>Quick Links</h3>
+            <a href="">A hyperlink</a>
+        </div>
+
+        <div id="main-content">
+            <div id="header-banner-div">
+                Header / Banner
+            </div>
+
+            <div id="intro-text-div">
+                Intro Text Area
+            </div>
+
+            <div id="main-div">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+                <div class="box">Box 4</div>
+                <div class="box">Box 5</div>
+            </div>
+
+            <div id="footer-div">
+                Footer
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
